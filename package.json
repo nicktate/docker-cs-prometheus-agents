@@ -1,0 +1,22 @@
+{
+  "name": "docker-cs-prometheus-agents",
+  "version": "0.0.1",
+  "description": "prometheus agents running on containership",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/containership/docker-cs-prometheus-agents.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/containership/docker-cs-prometheus-agents/issues"
+  },
+  "homepage": "https://github.com/containership/docker-cs-prometheus-agents#readme",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  }
+}
