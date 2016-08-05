@@ -1,5 +1,8 @@
 # docker-cs-prometheus-agents
-containership promethius agents docker image
+containership prometheus agents docker image
+
+## Build Status
+[![Build Status](https://drone.containership.io/api/badges/containership/docker-cs-prometheus-agents/status.svg)](https://drone.containership.io/containership/docker-cs-prometheus-agents)
 
 ## Installation
 ```
@@ -42,5 +45,4 @@ sudo docker run \
 `PROM_AGENT_NODE_EXPORTER_ARGS` - arguments passed to the node_exporter cmd (default: "--web.listen-address=0.0.0.0:$PROM_AGENT_NODE_EXPORTER_PORT")
 
 ## Roadmap
-
 * Support for dynamically adding custom scrapers
