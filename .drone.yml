@@ -1,0 +1,23 @@
+build:
+  image: library/node:6.3.0
+  commands:
+    - npm install
+
+notify:
+  slack:
+    webhook_url: $$SLACK_RELEASES_WEBHOOK
+    channel: releases
+    username: drone
+
+publish:
+  docker:
+    username: "$$DOCKERHUB_USERNAME"
+    password: "$$DOCKERHUB_PASSWORD"
+    email: "$$DOCKERHUB_EMAIL"
+    repo: containership/docker-cs-prometheus-agents
+    tag:
+        - $$COMMIT
+        - latest
+    when:
+      branch: master
+      event: push
