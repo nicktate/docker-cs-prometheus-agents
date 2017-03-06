@@ -14,9 +14,10 @@ publish:
     username: "$$DOCKERHUB_USERNAME"
     password: "$$DOCKERHUB_PASSWORD"
     email: "$$DOCKERHUB_EMAIL"
-    repo: containership/docker-cs-prometheus-agents
+    repo: containership/prometheus-metric-targets
     tag:
         - $$COMMIT
+        - 1.x
         - latest
     when:
       branch: master
