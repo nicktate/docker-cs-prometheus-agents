@@ -17,8 +17,18 @@ publish:
     repo: containership/prometheus-metric-targets
     tag:
         - $$COMMIT
-        - 1.x
         - latest
     when:
       branch: master
       event: push
+
+  docker:
+    username: "$$DOCKERHUB_USERNAME"
+    password: "$$DOCKERHUB_PASSWORD"
+    email: "$$DOCKERHUB_EMAIL"
+    repo: containership/prometheus-metric-targets
+    tag:
+        - $$TAG
+        - 1.x
+    when:
+      event: tag
